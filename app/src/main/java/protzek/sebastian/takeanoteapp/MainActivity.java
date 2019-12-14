@@ -1,5 +1,6 @@
 package protzek.sebastian.takeanoteapp;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -20,9 +21,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 import java.util.Objects;
 
+import protzek.sebastian.takeanoteapp.room.DeleteInfoDialogFragment;
 import protzek.sebastian.takeanoteapp.room.Note;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements DialogInterface.OnClickListener {
     public static final int ADD_NOTE_REQUEST = 1;
     public static final int EDIT_NOTE_REQUEST = 2;
 
@@ -125,9 +127,26 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.delete_all_notes) {
-            noteViewModel.deleteAllNotes();
-            Toast.makeText(this, "All notes deleted", Toast.LENGTH_SHORT).show();
+            deleteAllInfoDialog();
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void deleteAllInfoDialog() {
+        DeleteInfoDialogFragment infoDialogFragment = new DeleteInfoDialogFragment();
+        infoDialogFragment.show(getSupportFragmentManager(), null);
+    }
+
+    @Override
+    public void onClick(DialogInterface dialog, int which) {
+        switch (which) {
+            case DialogInterface.BUTTON_POSITIVE:
+                noteViewModel.deleteAllNotes();
+                Toast.makeText(this, "All notes deleted", Toast.LENGTH_SHORT).show();
+                break;
+            case DialogInterface.BUTTON_NEGATIVE:
+                Toast.makeText(this, "That was close!", Toast.LENGTH_SHORT).show();
+                break;
+        }
     }
 }
