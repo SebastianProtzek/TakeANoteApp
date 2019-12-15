@@ -14,7 +14,7 @@ import protzek.sebastian.takeanoteapp.room.NoteRepository;
 public class NoteViewModel extends AndroidViewModel {
     private NoteRepository repository;
     private LiveData<List<Note>> allNotes;
-    
+
     public NoteViewModel(@NonNull Application application) {
         super(application);
         repository = new NoteRepository(application);
@@ -22,24 +22,23 @@ public class NoteViewModel extends AndroidViewModel {
     }
 
 
-
-    public void insert(Note note) {
+    void insert(Note note) {
         repository.insert(note);
     }
 
-    public void update(Note note) {
+    void update(Note note) {
         repository.update(note);
     }
 
-    public void delete(Note note) {
+    void delete(Note note) {
         repository.delete(note);
     }
 
-    public void deleteAllNotes() {
+    void deleteAllNotes() {
         repository.deleteAllNotes();
     }
 
-    public LiveData<List<Note>> getAllNotes() {
+    LiveData<List<Note>> getAllNotes() {
         return allNotes;
     }
 }

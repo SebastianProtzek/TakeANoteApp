@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="details">Details</string>
+    <string name="priority">Priorität</string>
+    <string name="title">Titel</string>
+    <string name="add_note">Notiz hinzufügen</string>
+    <string name="all_deleted">"Alle Notizen wurden gelöscht "</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="cant_update">Die Notiz konnte nicht aktualisiert werden</string>
+    <string name="close_one">Das war knapp!</string>
+    <string name="didnt_save">Die Notiz wurde nicht gespeichert</string>
+    <string name="do_it">Mach das!</string>
+    <string name="edit_note">Notiz aktualisieren</string>
+    <string name="note_saved">Die Notiz wurde erfolgreich gespeichert</string>
+    <string name="note_updated">Die Notiz wurde erfolgreich aktualisiert</string>
+    <string name="please_insert_text">Bitte fügen Sie einen Titel und die Details hinzu</string>
+    <string name="will_delete_all">Alle Notizen werden gelöscht</string>
+    <string name="you_sure">Sind Sie sicher?</string>
+    <string name="your_note_app">Notizbuch App</string>
+    <string name="delete_all">Alle Notizen löschen</string>
+    <string name="save">Speichern</string>
+</resources>

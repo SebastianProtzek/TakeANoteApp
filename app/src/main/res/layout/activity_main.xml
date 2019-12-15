@@ -5,21 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/note_item"/>
+        tools:listitem="@layout/note_item" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/button_add_note"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:clickable="true"
-        app:srcCompat="@drawable/ic_add"
         android:layout_margin="32dp"
+        android:clickable="true"
         android:focusable="true"
-        android:onClick="addNote"/>
+        android:onClick="addNote"
+        app:srcCompat="@drawable/ic_add" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

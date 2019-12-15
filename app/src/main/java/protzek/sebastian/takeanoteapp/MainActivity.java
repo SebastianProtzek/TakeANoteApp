@@ -94,12 +94,12 @@ public class MainActivity extends AppCompatActivity implements DialogInterface.O
             Note note = new Note(title, details, priority);
             noteViewModel.insert(note);
 
-            Toast.makeText(this, "Note saved", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, (R.string.note_saved), Toast.LENGTH_SHORT).show();
         } else if (requestCode == EDIT_NOTE_REQUEST && resultCode == RESULT_OK) {
             int id = Objects.requireNonNull(data).getIntExtra(AddEditNoteActivity.EXTRA_ID, -1);
 
             if (id == -1) {
-                Toast.makeText(this, "Note can't be updated", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, (R.string.cant_update), Toast.LENGTH_SHORT).show();
                 return;
             }
 
@@ -111,9 +111,9 @@ public class MainActivity extends AppCompatActivity implements DialogInterface.O
             note.setId(id);
             noteViewModel.update(note);
 
-            Toast.makeText(this, "Note updated", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, (R.string.note_updated), Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(this, "Note didn't save", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, (R.string.didnt_save), Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -142,10 +142,10 @@ public class MainActivity extends AppCompatActivity implements DialogInterface.O
         switch (which) {
             case DialogInterface.BUTTON_POSITIVE:
                 noteViewModel.deleteAllNotes();
-                Toast.makeText(this, "All notes deleted", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, (R.string.all_deleted), Toast.LENGTH_SHORT).show();
                 break;
             case DialogInterface.BUTTON_NEGATIVE:
-                Toast.makeText(this, "That was close!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, (R.string.close_one), Toast.LENGTH_SHORT).show();
                 break;
         }
     }

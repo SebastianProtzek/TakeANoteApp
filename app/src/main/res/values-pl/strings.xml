@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="details">Opis</string>
+    <string name="priority">Priorytet</string>
+    <string name="title">Tytuł</string>
+    <string name="add_note">Dodaj notkę</string>
+    <string name="all_deleted">Usunięto wszystkie notatki</string>
+    <string name="cancel">Anuluj</string>
+    <string name="cant_update">Notka nie mogła zostać zaktualizowana</string>
+    <string name="close_one">Było blisko!</string>
+    <string name="didnt_save">Notka nie została zapisana</string>
+    <string name="do_it">Zrób to!</string>
+    <string name="edit_note">Edytuj Notkę</string>
+    <string name="note_saved">Zapisano notkę</string>
+    <string name="note_updated">Zaktualizowano notkę</string>
+    <string name="please_insert_text">Proszę dodać tytuł i opis notki</string>
+    <string name="will_delete_all">Wszystkie notki zostaną usunięte</string>
+    <string name="you_sure">Jesteś pewny?</string>
+    <string name="your_note_app">Notatnik</string>
+    <string name="delete_all">Usuń wszystkie notki</string>
+    <string name="save">Zapisz</string>
+</resources>

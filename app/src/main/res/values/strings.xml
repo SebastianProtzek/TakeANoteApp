@@ -1,3 +1,29 @@
 <resources>
-    <string name="app_name">Take A Note App</string>
+    <string name="app_name" translatable="false">Take A Note App</string>
+
+    <!-- Main Strings -->
+    <string name="your_note_app">Your Note App</string>
+    <string name="title">Title</string>
+    <string name="details">Details</string>
+    <string name="priority">Priority:</string>
+
+    <!-- Add or Edit Note Srings -->
+    <string name="add_note">Add Note</string>
+    <string name="save">Save</string>
+    <string name="note_saved">Note saved</string>
+    <string name="didnt_save">Note didn\'t save</string>
+    <string name="edit_note">Edit Note</string>
+    <string name="note_updated">Note updated</string>
+    <string name="cant_update">Note can\'t be updated</string>
+    <string name="please_insert_text">Please insert a title and description</string>
+
+    <!-- InfoDialog Strings -->
+    <string name="delete_all">Delete all notes</string>
+    <string name="you_sure">Are you sure?</string>
+    <string name="will_delete_all">It will delete all your Notes</string>
+    <string name="do_it">Do it!</string>
+    <string name="all_deleted">All notes deleted</string>
+    <string name="cancel">Cancel</string>
+    <string name="close_one">That was close!</string>
+
 </resources>

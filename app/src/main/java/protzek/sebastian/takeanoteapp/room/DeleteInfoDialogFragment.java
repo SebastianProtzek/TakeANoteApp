@@ -10,18 +10,21 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatDialogFragment;
 
+import protzek.sebastian.takeanoteapp.R;
+
 public class DeleteInfoDialogFragment extends AppCompatDialogFragment {
 
     private DialogInterface.OnClickListener mListener;
+
     @NonNull
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-        builder.setTitle("Are you sure?")
-                .setMessage("It will delete all your Notes");
+        builder.setTitle((R.string.you_sure))
+                .setMessage((R.string.will_delete_all));
 
-        builder.setPositiveButton("Do it!", mListener)
-                .setNegativeButton("Cancel", mListener);
+        builder.setPositiveButton((R.string.do_it), mListener)
+                .setNegativeButton((R.string.cancel), mListener);
 
         return builder.create();
     }
